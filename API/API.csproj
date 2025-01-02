@@ -7,12 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Core" Version="1.44.1" />
     <PackageReference Include="Azure.Identity" Version="1.13.1" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5" />
-    <PackageReference Include="Microsoft.Graph" Version="5.67.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
     <PackageReference Include="Microsoft.Graph.Core" Version="3.2.1" />
     <PackageReference Include="Microsoft.Identity.Client" Version="4.66.2" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
+    <PackageReference Include="Microsoft.Graph" version="5.67.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />   
+        <Reference Include="SMS.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLRef\SMS.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>  
 
+<!--
+dotnet add package Azure.Identity -version 1.13.1
+dotnet add package Azure.Core -version 1.44.1 
+dotnet add package Microsoft.Identity.Client -version 4.66.2-->
+ 
 </Project>
