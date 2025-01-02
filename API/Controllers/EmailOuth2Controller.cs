@@ -36,21 +36,21 @@ public class EmailController :ControllerBase
     }
 
     // For File Convert into bytes
-// [HttpGet]
-// public byte [] StreamFile()
-// {
-//    FileStream fs = new FileStream("C:Users/shubhamt/Desktop/Shubham.jpg", FileMode.Open,FileAccess.Read);
+[HttpGet]
+public byte [] StreamFile()
+{
+   FileStream fs = new FileStream("C:Users/shubhamt/Desktop/Shubham.jpg", FileMode.Open,FileAccess.Read);
 
-//    // Create a byte array of file stream length
-//    byte[] ImageData = new byte[fs.Length];
+   // Create a byte array of file stream length
+   byte[] ImageData = new byte[fs.Length];
 
-//    //Read block of bytes from stream into the byte array
-//    fs.Read(ImageData,0,System.Convert.ToInt32(fs.Length));
+   //Read block of bytes from stream into the byte array
+   fs.Read(ImageData,0,System.Convert.ToInt32(fs.Length));
 
-//    //Close the File Stream
-//    fs.Close();
-//    return ImageData; //return the byte data
-// }
+   //Close the File Stream
+   fs.Close();
+   return ImageData; //return the byte data
+}
 
 }
 
